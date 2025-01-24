@@ -1,0 +1,182 @@
+/*sidebar style  */
+.sidebar {
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  cursor: pointer;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.stats {
+  margin-top: auto;
+  text-align: center;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #85d692;
+  border-radius: 50%;
+}
+/* tasklist style */
+.task-list {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.task-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.task-input button {
+  padding: 10px 20px;
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #4cae4c;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+li input {
+  margin-right: 10px;
+}
+/* task detail style */
+.task-details {
+  padding: 20px;
+  background-color: #ffffff;
+  border-left: 1px solid #ddd;
+}
+
+/* login style */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f0f2f5;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background: #0056b3;
+}
+
+/* css for themes(dark,light) and layout(grid,list) */
+
+/* Light and Dark Mode */
+.app-container.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .app-container.dark {
+    background-color: #333333;
+    color: #ffffff;
+  }
+
+/* Task Container */
+.task-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.task-container.list {
+  display: block;
+}
+
+.task-card {
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.task-card.grid {
+  border: 1px solid #ccc;
+}
+
+.task-card.list {
+  border: none;
+}
