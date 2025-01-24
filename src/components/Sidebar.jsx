@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"; // Import PropTypes for validation
 import {
   Box,
   Avatar,
@@ -42,25 +41,25 @@ const Sidebar = ({ totalTasks, completedTasks, onClearAll }) => {
         Hey, ABCD
       </Typography>
       <List sx={{ width: "100%" }}>
-        <Link to="/alltask">
+        <Link to="/alltask" style={{ textDecoration: "none" }}>
           <ListItem button>
             <EventNoteIcon />
             <ListItemText primary="All Tasks" />
           </ListItem>
         </Link>
-        <Link to="/today">
+        <Link to="/today" style={{ textDecoration: "none" }}>
           <ListItem button>
             <CalendarTodayIcon />
             <ListItemText primary="Today" />
           </ListItem>
         </Link>
-        <Link to="/important">
+        <Link to="/important" style={{ textDecoration: "none" }}>
           <ListItem button>
             <StarBorderIcon />
             <ListItemText primary="Important" />
           </ListItem>
         </Link>
-        <Link to="/alltask">
+        <Link to="/alltask" style={{ textDecoration: "none" }}>
           <ListItem button>
             <SummarizeIcon />
             <ListItemText primary="Planned" />
@@ -112,12 +111,6 @@ const Sidebar = ({ totalTasks, completedTasks, onClearAll }) => {
       </Button>
     </Box>
   );
-};
-
-Sidebar.propTypes = {
-  totalTasks: PropTypes.number.isRequired,
-  completedTasks: PropTypes.number.isRequired,
-  onClearAll: PropTypes.func.isRequired,
 };
 
 export default Sidebar;
