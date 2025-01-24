@@ -3,6 +3,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../redux/authSlice";
+import PropTypes from "prop-types"; // Import PropTypes for validation
 
 const Header = ({ onToggleSidebar }) => {
   const isMobile = useMediaQuery("(max-width:600px)");
@@ -61,6 +62,10 @@ const Header = ({ onToggleSidebar }) => {
       </Box>
     </Box>
   );
+};
+
+Header.propTypes = {
+  onToggleSidebar: PropTypes.func.isRequired, 
 };
 
 export default Header;

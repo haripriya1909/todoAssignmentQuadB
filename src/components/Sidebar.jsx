@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"; // Import PropTypes for validation
 import {
   Box,
   Avatar,
@@ -111,6 +112,12 @@ const Sidebar = ({ totalTasks, completedTasks, onClearAll }) => {
       </Button>
     </Box>
   );
+};
+
+Sidebar.propTypes = {
+  totalTasks: PropTypes.number.isRequired,
+  completedTasks: PropTypes.number.isRequired,
+  onClearAll: PropTypes.func.isRequired,
 };
 
 export default Sidebar;
