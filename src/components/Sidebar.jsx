@@ -33,7 +33,7 @@ const Sidebar = ({ totalTasks, completedTasks, onClearAll }) => {
       }}>
       {/* Profile Section */}
       <Avatar
-        src="https://via.placeholder.com/100"
+        src="public\kyu nahi ho rahi padhai (1).jpg"
         alt="Profile"
         sx={{ width: 100, height: 100, marginBottom: 2 }}
       />
